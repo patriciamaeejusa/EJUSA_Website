@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Scope+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 :root {
   --primary-color: rgb(118, 97, 97);
   --primary-color-dark: rgb(60, 72, 77);
@@ -214,15 +211,19 @@ ul li a:hover {
   justify-content: center;
   flex-direction: column;
 }
-.about__content h2 {
-  font-size: 50px;
-}
+
 .about__image img {
   max-width: 300px;
   border-radius: 50px;
 }
+.section__title {
+  font-family: "Leckerli One", cursive;
 
+  font-size: 100px;
+}
 .about__details {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
   padding: 1rem 0;
   color: var(--text-light);
   text-align: center;
@@ -259,11 +260,14 @@ section > h1 {
   margin-bottom: 15px;
 }
 .description h1 {
+  font-family: "Leckerli One", cursive;
+
   font-size: 30px;
   margin-bottom: 10px;
   color: white;
 }
 .description p {
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   font-size: 18px;
 }
@@ -283,8 +287,9 @@ section > h1 {
   overflow: hidden;
 }
 .title-1 {
-  font-size: 60px;
-  padding-left: 480px;
+  font-family: "Leckerli One", cursive;
+  font-size: 100px;
+  text-align: center;
 }
 
 .products {
@@ -341,7 +346,7 @@ footer p:nth-child(2) {
 }
 .end {
   position: absolute;
-  color: red;
+  color: white;
   bottom: 10px;
   font-size: 14px;
 }
