@@ -28,9 +28,11 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--extra-light);
 }
 
 nav {
+  display: flex;
   width: 100%;
   position: fixed;
   top: 0;
@@ -188,46 +190,6 @@ ul li a:hover {
   height: auto;
   width: 300px;
 }
-
-@media (width < 750px) {
-  nav .checkbox {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
-
-  .section__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image {
-    grid-area: 1/1/2/2;
-  }
-
-  .action__btns {
-    margin: auto;
-  }
-}
 /*about section*/
 .about,
 .project {
@@ -248,7 +210,9 @@ ul li a:hover {
   justify-content: center;
   flex-direction: column;
 }
-
+.about__content h2 {
+  font-size: 50px;
+}
 .about__image img {
   max-width: 300px;
   border-radius: 50px;
@@ -257,5 +221,78 @@ ul li a:hover {
 .about__details {
   padding: 1rem 0;
   color: var(--text-light);
-  text-align: left;
+  text-align: center;
+}
+
+#about {
+  margin-top: 50px;
+}
+section > h1 {
+  text-align: center;
+}
+.about__container p {
+  width: 62%;
+  margin: 0px auto;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-content: center;
+  padding-top: 40px;
+}
+
+/*portfolio*/
+#portfolio {
+  padding: 50px 0;
+  margin-left: 75px;
+  margin-right: 70px;
+}
+.products img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 15px;
+}
+.description h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+.description p {
+  color: white;
+  font-size: 18px;
+}
+.products div {
+  background: black;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 25px;
+  transition: transform 0.7s;
+}
+
+.product-list {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.title-1 {
+  font-size: 60px;
+  padding-left: 480px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 30px;
+}
+
+.product-list:hover img {
+  transform: scale(1.1);
+}
+.product-list:hover .description {
+  height: 100%;
 }
