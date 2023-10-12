@@ -15,6 +15,9 @@
   --extra-light: rgb(159, 135, 114);
   --max-width: 1200px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
@@ -295,4 +298,49 @@ section > h1 {
 }
 .product-list:hover .description {
   height: 100%;
+}
+
+/*contact*/
+footer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #7e6d4d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer p:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2) {
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.social-icons .icon {
+  display: inline-block;
+  height: auto;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 15px 10px;
+  transition: transform 0.6s;
+}
+.social-icons .icon:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+.end {
+  position: absolute;
+  color: red;
+  bottom: 10px;
+  font-size: 14px;
 }
